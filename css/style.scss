@@ -1,0 +1,134 @@
+@import "bootstrap.css";
+@import "owl.theme.default.min.css";
+@import "owl.carousel.min.css";
+
+$main_font: '20 Kopeek', sans-serif;
+$hover_header: #252323;
+$h1_color: black;
+$color_link: black;
+
+.navbar-expand-lg .navbar-nav .nav-link {
+  padding: 0;
+}
+
+.button {
+  padding: 23px 47px;
+  background-color: white;
+  border-radius: 40px;
+  text-decoration: none;
+  color: $color_link;
+  display: inline-block;
+  transition: 0.4s;
+  &:hover {
+    text-decoration: none;
+    color: black;
+    transform: scale(1.15);
+    transition: transform 0.4s;
+  }
+
+}
+
+header {
+  z-index: 2;
+
+  .navbar {
+    &-logo-tagline {
+      font-family: $main_font;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 19px;
+      max-width: 213px;
+    }
+  }
+
+  .navbar-nav {
+    .nav-item {
+      font-family: $main-font;
+      transition: 0.4s;
+      &:first-child {
+        padding: 7px 27px 7px 33px;
+        border-radius: 15px;
+      }
+
+      border: 1px solid white;
+      margin: 0 14px;
+      padding: 11px 15px;
+      border-radius: 50%;
+
+      &:last-child {
+        padding: 11px;
+      }
+
+      img {
+        display: block;
+
+      }
+      &:hover {
+        border-color: $hover_header;
+        transition: 0.4s;
+      }
+    }
+  }
+}
+
+.main_section {
+  position: relative;
+  .slide-one.owl-carousel .owl-nav,.slide-one.owl-carousel .owl-dots{
+    display: none;
+  }
+  article {
+    position: absolute;
+    z-index: 5;
+    top: 380px;
+    left: 21%;
+
+    h1 {
+      color: $h1_color;
+      font-family: $main_font;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 55px;
+      line-height: 55px;
+      max-width: 600px;
+      margin-bottom: 30px;
+    }
+
+    h3 {
+      font-family: $main_font;
+      font-size: 34px;
+      line-height: 37px;
+      margin-bottom: 88px;
+    }
+
+    a:first-of-type {
+      margin-right: 20px;
+    }
+
+  }
+
+
+  .main_banner {
+    background-size: cover;
+    height: 99.9vh;
+
+
+    &.item1 {
+      background-image: url(../images/1.jpg);
+    }
+
+    &.item2 {
+      background-image: url(../images/2.jpg);
+    }
+
+    &.item3 {
+      background-image: url(../images/3.jpg);
+    }
+
+    &.item4 {
+      background-image: url(../images/4.jpg);
+    }
+
+  }
+}
+

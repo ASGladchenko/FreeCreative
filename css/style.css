@@ -1,0 +1,106 @@
+@import "bootstrap.css";
+@import "owl.theme.default.min.css";
+@import "owl.carousel.min.css";
+.navbar-expand-lg .navbar-nav .nav-link {
+  padding: 0;
+}
+
+.button {
+  padding: 23px 47px;
+  background-color: white;
+  border-radius: 40px;
+  text-decoration: none;
+  color: black;
+  display: inline-block;
+  transition: 0.4s;
+}
+.button:hover {
+  text-decoration: none;
+  color: black;
+  transform: scale(1.15);
+  transition: transform 0.4s;
+}
+
+header {
+  z-index: 2;
+}
+header .navbar-logo-tagline {
+  font-family: "20 Kopeek", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 19px;
+  max-width: 213px;
+}
+header .navbar-nav .nav-item {
+  font-family: "20 Kopeek", sans-serif;
+  transition: 0.4s;
+  border: 1px solid white;
+  margin: 0 14px;
+  padding: 11px 15px;
+  border-radius: 50%;
+}
+header .navbar-nav .nav-item:first-child {
+  padding: 7px 27px 7px 33px;
+  border-radius: 15px;
+}
+header .navbar-nav .nav-item:last-child {
+  padding: 11px;
+}
+header .navbar-nav .nav-item img {
+  display: block;
+}
+header .navbar-nav .nav-item:hover {
+  border-color: #252323;
+  transition: 0.4s;
+}
+
+.main_section {
+  position: relative;
+}
+.main_section .slide-one.owl-carousel .owl-nav, .main_section .slide-one.owl-carousel .owl-dots {
+  display: none;
+}
+.main_section article {
+  position: absolute;
+  z-index: 5;
+  top: 380px;
+  left: 21%;
+}
+.main_section article h1 {
+  color: black;
+  font-family: "20 Kopeek", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 55px;
+  line-height: 55px;
+  max-width: 600px;
+  margin-bottom: 30px;
+}
+.main_section article h3 {
+  font-family: "20 Kopeek", sans-serif;
+  font-size: 34px;
+  line-height: 37px;
+  margin-bottom: 88px;
+}
+.main_section article a:first-of-type {
+  margin-right: 20px;
+}
+.main_section .main_banner {
+  background-size: cover;
+  height: 99.9vh;
+}
+.main_section .main_banner.item1 {
+  background-image: url(../images/1.jpg);
+}
+.main_section .main_banner.item2 {
+  background-image: url(../images/2.jpg);
+}
+.main_section .main_banner.item3 {
+  background-image: url(../images/3.jpg);
+}
+.main_section .main_banner.item4 {
+  background-image: url(../images/4.jpg);
+}
+
+/*# sourceMappingURL=style.css.map */
