@@ -26,6 +26,10 @@
   text-decoration: none;
 }
 
+body {
+  font-family: "20 Kopeek", sans-serif;
+}
+
 header {
   z-index: 4;
 }
